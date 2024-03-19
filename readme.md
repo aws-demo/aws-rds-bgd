@@ -31,9 +31,9 @@ The setup is divided into two main parts:
 ## Setup Instructions
 
 ### Prerequisites:
-
-- Make sure Terraform is installed on your computer.
-- Set up your AWS CLI with the necessary credentials.
+Before starting with the deployment process, you need to have Terraform and AWS CLI installed on your machine. Additionally, ensure that you have configured AWS CLI with your credentials and set the default region to us-east-1.
+- To install Terraform, follow the instructions on the official [Terraform website](https://developer.hashicorp.com/terraform/cli/commands).
+- For AWS CLI installation and initial setup, refer to the official [AWS CLI documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
 
   You'll need an AWS Access Key ID and Secret Access Key. Here's how to set them as environment variables:
 
@@ -45,6 +45,13 @@ The setup is divided into two main parts:
   export AWS_ACCESS_KEY_ID="YOUR_ACCESS_KEY_ID"
   export AWS_SECRET_ACCESS_KEY="YOUR_SECRET_ACCESS_KEY"
   ```
+  #### Setting the Default AWS Region
+  If you specifically want to set or change the default region to us-east-1 for AWS CLI, you can do so by editing the AWS CLI configuration file directly or by running the configure command again:
+  
+  ```shell
+    aws configure set default.region us-east-1
+  ```
+This sets the default region for AWS CLI commands to us-east-1, ensuring that all operations you perform with AWS CLI and Terraform will target the US East (N. Virginia) region, unless otherwise specified.
 
 ## Setup Instructions
 

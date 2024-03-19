@@ -18,6 +18,7 @@ resource "aws_db_instance" "primary" {
   username                = "admin"
   password                = "VeryStrongPa33word"
   db_subnet_group_name    = aws_db_subnet_group.main.name
+  vpc_security_group_ids = [aws_security_group.allow_mysql.id]
   multi_az                = true
   publicly_accessible     = true
   skip_final_snapshot     = true
@@ -34,6 +35,7 @@ resource "aws_db_instance" "read_replica" {
   publicly_accessible = true
   skip_final_snapshot = true
   replicate_source_db = aws_db_instance.primary.identifier
+  vpc_security_group_ids = [aws_security_group.allow_mysql.id]
   availability_zone   = "us-east-1c"
 }
 

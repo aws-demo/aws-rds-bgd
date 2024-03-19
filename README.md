@@ -2,6 +2,29 @@
 
 This document explains how to deploy an AWS RDS instance using Terraform. It includes a primary RDS instance with high availability across multiple availability zones and a read replica for increased read scalability. The setup also covers creating a VPC, subnets in three availability zones, an Internet Gateway, and routing for internet access.
 
+
+## Step-By-Step Video Tutorial
+
+Here are some quick video walkthroughs to help you get started with the project:
+
+### 📚 Overall Project Overview
+
+Get an overall understanding of the project and how each part ties together in this comprehensive walkthrough.
+
+[Watch the video 🎥](https://www.loom.com/share/0bff4c750745408ea162870b8ad7aa9b?sid=414ec1b2-4347-4ea4-81fb-8bb548dc2b04)
+
+### 🛠 Creating RDS using Terraform
+
+In this video, I walk you through the process of setting up your RDS instances using Terraform.
+
+[Watch the video 🎥](https://www.loom.com/share/00f8d069061b4a16bcc125c60f0e1ffa?sid=3fb2d3cc-f5fa-434d-83c3-e7e3b6ef286f)
+
+### 🔄 Creating Blue/Green Deployment using AWS CLI
+
+This video covers how to create a blue/green deployment for your RDS instances using the AWS CLI.
+
+[Watch the video 🎥](https://www.loom.com/share/8531948cba2f455ebf2d3ceb568cd3f2?sid=c3e102ea-4b33-44d0-a6e9-98058c6cb000)
+
 ## Architecture Overview
 
 The setup is divided into two main parts:
